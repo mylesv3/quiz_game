@@ -1,0 +1,17 @@
+questions =["is water wet?", "who is spiderman's girlfriend?","pc or console?"]
+
+answers = ["no", "mary jane", "pc"]
+
+def quizGame ():
+  score = 0
+  for i in range(len(questions)):
+    print(questions[i])
+    ans = input('Answer at your own risk \n')
+    if ans == answers[i]:
+      print ('You are correct!!')
+      score += 1
+    else: 
+      print ("Sorry, better luck next time :(")
+  print ("Your score is", score)
+
+quizGame ()
